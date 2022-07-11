@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.1001fonts.com/ninja-naruto-font.html?text=Naruto%20Shippuden">
+  <script src="https://kit.fontawesome.com/67968b12b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <section class="header">
+     <nav>
+         <a href="index.html"><img src="img/logo2.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> 
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="character.html">CHARACTERS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+     <div class="text-box">
+         <h1>Naruto Shippuden</h1>
+         <p>Making websites is now one of the easiest things in the world. You just need to learn HTML,CSS,<br> Javascript and you are good to go.</p>
+         <a href="about.html" class="hero-btn"> Know More About Naruto</a>
+     </div>
+ </section>
+ 
+
+
+
+
+
+
+
+
+
+ <!--------JavaScript to toggle menu ------->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+ </script>
+    
+</body>
+</html>
